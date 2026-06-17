@@ -5,5 +5,5 @@ pool:
 vmImage: 'ubuntu-latest' # use microsoft-hosted agent
 
 steps:
--script : echo "azure devops pipeline is working!"
-displyname: "Run a simple script." 
+-script: echo "azure devops pipeline is working!"
+displyname: 'Run a simple script.' 
