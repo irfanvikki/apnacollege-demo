@@ -1,0 +1,9 @@
+trigger:
+-main # Runs pipeline when code is pushed to main branch
+
+pool:
+vmImage: 'ubuntu-latest' # use microsoft-hosted agent
+
+steps:
+-script : echo "azure devops pipeline is working!"
+displyname: "Run a simple script." 
