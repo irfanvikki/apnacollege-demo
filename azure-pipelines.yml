@@ -1,16 +1,9 @@
-name: CI
+trigger:
+  - main
 
-on:
-  push:
-    branches:
-      - main
+pool:
+  name: Default
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Run script
-        run: echo "GitHub Actions is working!"
+steps:
+  - script: echo "Pipeline running on self-hosted agent"
+    displayName: 'Run Script'
