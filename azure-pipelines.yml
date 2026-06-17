@@ -1,9 +1,12 @@
 trigger:
--main # Runs pipeline when code is pushed to main branch
+
+main
 
 pool:
-vmImage: 'ubuntu-latest' # use microsoft-hosted agent
+vmImage: 'ubuntu-latest'
 
 steps:
--script: echo "azure devops pipeline is working!"
-displyname: 'Run a simple script' 
+
+script: |
+echo "Azure DevOps pipeline is working!"
+displayName: 'Run a simple script'
