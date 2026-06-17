@@ -1,9 +1,16 @@
-trigger:
-  - main   # Runs pipeline when code is pushed to main branch
+name: CI
 
-pool:
-  vmImage: 'ubuntu-latest'   # Use Microsoft-hosted agent
+on:
+  push:
+    branches:
+      - main
 
-steps:
-  - script: echo "Azure DevOps pipeline is working!"
-    displayName: 'Run a simple script'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run script
+        run: echo "GitHub Actions is working!"
