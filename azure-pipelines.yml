@@ -5,5 +5,5 @@ pool:
   name: Default
 
 steps:
-  - script: echo "Pipeline running on self-hosted agent"
+  - script: echo "Hello"
     displayName: 'Run Script'
